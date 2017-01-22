@@ -1,0 +1,367 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+    font-family: Trajan Pro;
+    src: url(TrajanPro.ttf);
+}
+
+body {
+	overflow-x: hidden;
+}
+
+#container {
+	width: 100%;
+	height: auto;	
+}
+
+.header {
+	width: 100%;
+	height: 75px;
+	background-color: #ee3466;
+}
+
+.menu {
+	width: auto;
+	height: auto;
+	float: left;
+	margin-top: 22px;
+	margin-left: 20px;
+}
+
+.menu img {
+	width: 40px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.search {
+	width: auto;
+	height: auto;
+	float: right;
+	margin-top: 25px;
+	margin-right: 20px;
+}
+
+.search img {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+#map {
+	width: 99%;
+	height: 500px;
+	margin-left: .5%;
+	margin-top: .5%;
+}
+
+.finder h2 {
+	font-family: Trajan Pro;
+	color: #ee3466;
+	font-weight: initial;
+	margin-top: 50px;
+}
+
+.finder {
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+#lat {
+	width: 130px;
+	height: 40px;
+	border: 1px solid #ee3466;
+	text-indent: 15px;
+	font-size: 18px;
+	font-family: arial;
+}
+
+input::-webkit-input-placeholder {
+	font-size: 12px;
+	font-family: Trajan-Pro;
+}
+
+
+#lng {
+	width: 130px;
+	height: 40px;
+	border: 1px solid #ee3466;
+	margin-left: 25px;
+	margin-top: 30px;
+	text-indent: 15px;
+	font-size: 18px;
+	font-family: arial;
+}
+
+.stylebtn {
+	width: 130px;
+	height: 40px;
+	color: white;
+	background: none;
+	border: none;
+	margin-top: 30px;
+	background: #ee3466;
+	font-family: Trajan Pro;
+	font-weight: inherit;
+	font-size: 13px;
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+
+#error {
+	width: 100%;
+	height: 100px;
+	background: rgba(245, 245, 220,.9);
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	-webkit-transform: translate(-50%,0);
+	text-align: center;
+	font-family: Trajan Pro;
+	line-height: 65px;
+}
+
+#error p {
+	color: red;
+	font-size: 10px;
+	margin: 0;
+	padding: 0;
+	line-height: 0px;
+}
+
+#error #close {
+	font-size: 30px;
+	font-family: Arial;
+	position: absolute;
+	right: 40px;
+	top: 20px;
+	cursor: pointer;
+}
+
+.infoModal {
+	transition: 1s;
+	width: auto;
+	font-family: sans-serif;
+	font-weight: initial;
+	opacity: 1;
+}
+
+.infoModal:hover { 
+	transition: 1s;
+	opacity: .7;
+	cursor: pointer;
+}
+
+.menu-list {
+	width: 150px;
+	height: 506px;
+	background: #ee3466;
+	opacity: .8;
+	position: absolute;
+	z-index: 220;
+	left: -200px;
+	top: 75px;
+	text-align: center;
+} 
+
+#close-menu {
+	color: white;
+	cursor: pointer;
+	position: fixed;
+	padding-top: 15px;
+	font-size: 25px;
+	font-family: courier;
+}
+
+.items {
+	transition: 1s;
+	width: 100%;
+	font-family: Trajan Pro;
+	color: white;
+	height: auto;
+	float: left;
+	margin-top: 70px;
+}
+
+.items ul li {
+	padding: 20px;
+	border-bottom: 1px solid white;
+}
+
+.items ul li:last-child {
+	border-bottom: none;
+}
+
+.items ul li:first-child {
+	font-size: 27px;
+	font-weight: bold;
+	padding: 30px;
+}
+
+.items li:hover {
+	transition: .5;
+	cursor: pointer;	
+	opacity: .8;
+}
+
+#about {
+	width: 70%;
+	height: auto;
+	min-height: 300px;
+	margin-left: 15%; 
+	background: white;
+	z-index: 500;
+	position: absolute;
+	text-align: center;
+	opacity: 0;
+	left: -2090px;
+	top: 100px;
+	box-shadow: 0px 4px 4px #888888;
+}
+
+#about h2 {
+	font-size: 25px;
+	color: #ee3466;
+	font-family: Trajan Pro;
+	line-height: 100px;
+	margin-left: 25px;
+}
+
+#about p {
+	font-size: 18px;
+	color: #ee3466;
+	font-family: Trajan Pro;
+	line-height: 30px;
+	padding: 10px;
+	font-weight: initial;
+}
+
+#about a { 
+	font-size: 25px;
+	color:  #ee3466;
+	float: right;
+	margin-right: 9px;
+	cursor: pointer;
+}
+
+#usage {
+	width: 70%;
+	height: auto;
+	min-height: 250px;
+	margin-left: 15%; 
+	background: white;
+	z-index: 500;
+	position: absolute;
+	text-align: center;
+	opacity: .95;
+	top: -1000px;
+	box-shadow: 0px 4px 4px #888888;
+}
+
+#usage h2 {
+	font-size: 25px;
+	color: #ee3466;
+	font-family: Trajan Pro;
+	line-height: 100px;
+	margin-left: 25px;
+}
+
+#usage p {
+	font-size: 18px;
+	color: #ee3466;
+	font-family: Trajan Pro;
+	line-height: 30px;
+	padding: 10px;
+	font-weight: initial;
+}
+
+#usage a { 
+	font-size: 25px;
+	color:  #ee3466;
+	float: right;
+	margin-right: 9px;
+	cursor: pointer;
+}
+
+#contact {
+	width: 70%;
+	height: auto;
+	min-height: 300px;
+	margin-left: 15%; 
+	background: white;
+	z-index: 500;
+	position: absolute;
+	text-align: center;
+	opacity: 0;
+	top: 100px;
+	left: -2000px;
+	box-shadow: 0px 4px 4px #888888;
+}
+
+#contact h2 {
+	font-size: 25px;
+	color: #ee3466;
+	font-family: Trajan Pro;
+	line-height: 100px;
+}
+
+#contact p {
+	font-size: 18px;
+	color: #ee3466;
+	font-family: Trajan Pro;
+	line-height: 30px;
+	padding: 10px;
+	font-weight: initial;
+}
+
+#contact a { 
+	font-size: 25px;
+	color:  #ee3466;
+	float: right;
+	margin-right: 9px;
+	cursor: pointer;
+}
+
+
+#welcome {
+	width: 70%;
+	height: auto;
+	min-height: 300px;
+	margin-left: 15%; 
+	background: white;
+	z-index: 500;
+	position: absolute;
+	text-align: center;
+	top: 130px;
+	opacity: 10;
+	box-shadow: 0px 4px 4px #888888;
+}
+
+#welcome h2 {
+	font-size: 25px;
+	color: #ee3466;
+	font-family: Trajan Pro;
+	line-height: 100px;
+	margin-left: 25px;
+}
+
+#welcome p {
+	font-size: 18px;
+	color: #ee3466;
+	font-family: Trajan Pro;
+	line-height: 30px;
+	padding: 10px;
+	font-weight: initial;
+}
+
+#welcome a { 
+	font-size: 25px;
+	color:  #ee3466;
+	float: right;
+	margin-right: 9px;
+	cursor: pointer;
+}

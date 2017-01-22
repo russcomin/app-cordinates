@@ -1,0 +1,19 @@
+1.21.2017
+
+1.cut code 
+2.add script files into index
+
+
+----TODOS----
+
+3.Create modules for navigation aka side nav
+4................thinking
+5.style modals 
+6.close buttons 
+
+//////
+
+7.contact
+8.active page modal 
+	
+-that's it i think 

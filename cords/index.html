@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cords</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+	<div id="container">
+				<div class="menu-list" id="menudiv">
+					
+					<div class="items">
+						<ul>
+							<li>MENU</li>
+							<li id="openAbout">About</li>
+							<li id="openUsage">How to use app</li>
+							<li id="openContact">Contact</li>
+						</ul>
+					</div>
+
+				</div><!-- end menu-list -->
+		
+		<div class="header">
+
+			<div class="menu" id="menu"><img src="images/menu-burger.png"></div>
+			<div class="search" id="search"><img src="images/search.png"></div>
+
+			</div><!-- end header -->
+
+				<div id="map">
+					
+
+				</div><!-- end map -->
+
+				<div class="finder">
+
+					<h2>Find place based on cordinates</h2>
+					<input type="text" name="lat" id="lat" placeholder="latitude">
+					<input type="text" name="lng" id="lng" placeholder="longitude"><br>
+					<button class="stylebtn" id="find_cords" type="button">Serach</button>
+
+				</div><!-- end finder -->
+
+	</div><!-- end container -->
+
+
+													
+	<script type="text/javascript" src="scripts/modals/welcome_modal.js"></script>														
+	<script type="text/javascript" src="scripts/modals/contact_modal.js"></script>														
+	<script type="text/javascript" src="scripts/modals/usage_modal.js"></script>														
+	<script type="text/javascript" src="scripts/modals/about_modal.js"></script>														
+	<script type="text/javascript" src="scripts/modules/close_module.js"></script>
+	<script type="text/javascript" src="scripts/modules/error_module.js"></script>
+	<script type="text/javascript" src="scripts/map-controller.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+</body>
+</html>
